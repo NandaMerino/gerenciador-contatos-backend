@@ -48,3 +48,17 @@ Para testar a API, recomenda-se o uso do **Postman**:
 2. Configure o ambiente com a URL base:
    `http://localhost:8080`
 3. Execute requisições para verificar os endpoints disponíveis.
+
+   ### Endpoints
+
+| Método | Endpoint                 | Descrição |
+|--------|--------------------------|-----------|
+| **GET**    | `/contatos`             | Lista todos os contatos |
+| **GET**    | `/contatos/{id}`         | Busca um contato pelo ID |
+| **POST**   | `/contatos`             | Cria um novo contato |
+| **PUT**    | `/contatos/{id}`        | Atualiza um contato pelo ID |
+| **DELETE** | `/contatos/{id}`        | Remove um contato pelo ID |
+
+💡 **Obs.:** Para operações **POST** e **PUT**, envie um JSON no corpo da requisição com os dados do contato.
+
+
