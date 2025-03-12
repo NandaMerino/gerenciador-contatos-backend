@@ -22,19 +22,19 @@ Antes de iniciar, certifique-se de ter instalado:
 - [Postman](https://www.postman.com/) (opcional, mas recomendado para testes)
   
 ### Como Rodar a Aplicação
-1. ** Clone o repositório: **
+1. **Clone o repositório:**
    ```sh
    git clone https://github.com/NandaMerino/gerenciador-contatos-backend.git
 
-2. ** Acesse o diretório do projeto: **
+2. **Acesse o diretório do projeto:**
    ```sh
    cd gerenciador-contatos-backend
 
-3. ** Instale as dependências e compile o projeto: **
+3. **Instale as dependências e compile o projeto:**
    ```sh
    mvn clean install
 
-4. ** Execute a aplicação: **
+4. **Execute a aplicação:**
    ```sh
    mvn spring-boot:run
 
