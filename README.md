@@ -1,9 +1,5 @@
 # Gerenciador de Contatos - Backend
 
-![GitHub repo size](https://img.shields.io/github/repo-size/NandaMerino/gerenciador-contatos-backend)
-![GitHub contributors](https://img.shields.io/github/contributors/NandaMerino/gerenciador-contatos-backend)
-![GitHub license](https://img.shields.io/github/license/NandaMerino/gerenciador-contatos-backend)
-
 ## Sobre o Projeto
 O **Gerenciador de Contatos** é uma aplicação desenvolvida para facilitar a organização e gestão de contatos pessoais e profissionais. Este repositório contém o backend da aplicação, desenvolvido com **Spring Boot**.
 
