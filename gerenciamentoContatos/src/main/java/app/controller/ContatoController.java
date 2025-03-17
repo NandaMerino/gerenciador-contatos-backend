@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import app.entity.Contato;
@@ -73,7 +74,18 @@ public class ContatoController {
 		}catch(Exception e) {
 			return new ResponseEntity<String>("Erro ao tentar deletar: " + e.getMessage(), HttpStatus.BAD_REQUEST);
 		}
-		
 	}
+	
+	@GetMapping("/findByTrechoNome")
+	public ResponseEntity<List<Contato>>findByTrechoNome(@RequestParam String nome){
+		try {
+			List<Contato>lista = this.contatoService.findByTrechoNome(nome);
+			return new ResponseEntity<>(lista, HttpStatus.OK);
+		} catch (Exception e) {
+			return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+		}
+	}
+	
+	
 	
 }

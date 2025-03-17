@@ -38,5 +38,9 @@ public class ContatoService {
 		this.contatoRepository.deleteById(id);
 		return "Cadastro deletado com sucesso!";
 	}
+	
+	public List<Contato> findByTrechoNome(String nome) {
+		return this.contatoRepository.findByTrechoNome(nome);
+	}
 
 }
